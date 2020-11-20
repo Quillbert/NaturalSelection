@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154140665-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154140665-1');
+</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Selection</title>
+    <script src="lib/p5.js"></script>
+    <script src="lib/p5.dom.js"></script>
+    <script src="lib/p5.sound.js"></script>
+    <script src="sketch.js"></script>
+    <script src="food.js"></script>
+    <script src="finder.js"></script>
+  </head>
+  <body>
+    <h1>Natural Selection Simulation</h1>
+    <a href="/../">Home</a>
+    <br>
+    <div id="sketch" style="margin-top: 2vh;"></div>
+    <p>This is a program that simulates natural selection and evolution. The gray square is the environment. The blue dots are food, which regenerates at a constant rate. The small moving circles are the organisms. The organisms are constantly moving, and they lose energy as they move. If they run out of energy, they die. As they start to get hungry, they will turn yellow, then red as they are starving. They can gain energy by eating the food.</p>
+    <p>The pink circle is the vision of the organisms. They can see any food inside that circle, and they will move to the closest food they see. They will eat the food once they are close enough. If they cannot see any food, they will turn randomly, and they will turn around when they hit the edge of the environment.</p>
+    <p>If an organism has enough energy, it can breed. Breeding occurs when two organisms with enough energy to breed get close to each other. A new organism will be created, and its starting energy will be subtracted from that of the parents. The parents will then move in a random direction for about 1.5 seconds, in order to give the baby a chance at finding food and surviving.</p>
+    <p>When two organisms breed, the traits of the baby are somewhere between those of the parents. However, there is about a 10% chance that a trait will have a mutation, which will sometimes move value of the trait to somewhere just outside the range of the parents.</p>
+    <p>
+      There are six different traits that can change between organisms. They are:
+      <ul>
+        <li>Vision Range - How far the organism is able to see food, shown by the pink circles</li>
+        <li>Speed - how fast the organism can move</li>
+        <li>Eat Reach - how close the organism has to be to a piece of food to eat it</li>
+        <li>Breed Reach - how close the organism has to be to a mate in order to have a child</li>
+        <li>Minimum Breed Energy - the minimum energy the organism must have in order to have a child</li>
+        <li>Energy Given to Children - how much energy the organism will give to its children</li>
+      </ul>
+      You can see the current averages of these statistics by pressing 's'.
+    </p>
+    <p><a href="https://github.com/Quillbert/NaturalSelection">The source code for this page can be found here.</a></p>
+  </body>
+</html>
