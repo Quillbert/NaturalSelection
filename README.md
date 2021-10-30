@@ -1,2 +1,2 @@
 # NaturalSelection
-This is a program that simulates natural selection and evolution. I made it while learning about the genetic algrotithm, which is a process that allows computers to continuously optimize a solution to a problem in a way inspired by evolution. You can see this program in action at http://www.quillbert.tk/food-finder.
+This is a program that simulates natural selection and evolution. I made it while learning about the genetic algrotithm, which is a process that allows computers to continuously optimize a solution to a problem in a way inspired by evolution. The algorithm is commonly used in artificial intelligence to allow computers to "learn." You can see this program in action at http://www.quillbert.tk/food-finder.
